@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mehdi — Portfolio génie civil</title>
+  <meta name="description" content="Portfolio de Mehdi, étudiant en 1re année de cycle préparatoire en génie civil.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <a href="#accueil" class="logo">Mehdi<span>.</span></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><i></i><i></i></button>
+    <nav id="menu">
+      <a href="#apropos">À propos</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact" class="nav-cta">Me contacter</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO : plan technique dessiné à l'ouverture -->
+    <section class="hero" id="accueil">
+      <div class="hero-text">
+        <p class="hero-tag">Cycle préparatoire · Génie civil · 1re année</p>
+        <h1>Je dessine les structures de demain.</h1>
+        <p class="hero-sub">Je m'appelle Mehdi. J'apprends à calculer, concevoir et construire des ouvrages qui durent : ponts, bâtiments, routes.</p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+          <a href="https://www.linkedin.com/in/mehdi-s-d-k-93711025b" target="_blank" rel="noopener" class="btn btn-ghost">Mon LinkedIn</a>
+        </div>
+      </div>
+
+      <svg class="blueprint" viewBox="0 0 800 330" role="img" aria-label="Plan d'un pont à treillis dessiné trait par trait">
+        <g class="bp-ground" fill="none" stroke-width="2">
+          <path class="draw" pathLength="1" style="--d:0s" d="M20 270 H780"/>
+          <path class="draw" pathLength="1" style="--d:.2s" d="M40 200 H760"/>
+          <path class="draw" pathLength="1" style="--d:.4s" d="M100 200 V270 M700 200 V270"/>
+        </g>
+        <g class="bp-truss" fill="none" stroke-width="3" stroke-linejoin="round">
+          <path class="draw" pathLength="1" style="--d:.8s" d="M100 200 H700"/>
+          <path class="draw" pathLength="1" style="--d:1.2s" d="M160 120 H640"/>
+          <path class="draw" pathLength="1" style="--d:1.6s" d="M100 200 L160 120 L220 200 L280 120 L340 200 L400 120 L460 200 L520 120 L580 200 L640 120 L700 200"/>
+        </g>
+        <g class="bp-dim" fill="none" stroke-width="1.5">
+          <path class="draw" pathLength="1" style="--d:2.4s" d="M100 300 H700 M100 292 V308 M700 292 V308"/>
+        </g>
+        <text class="bp-label" x="400" y="322" text-anchor="middle">L = 24,00 m</text>
+        <g class="bp-nodes">
+          <circle cx="160" cy="120" r="5"/><circle cx="280" cy="120" r="5"/><circle cx="400" cy="120" r="5"/>
+          <circle cx="520" cy="120" r="5"/><circle cx="640" cy="120" r="5"/>
+        </g>
+      </svg>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="section" id="apropos">
+      <h2>À propos</h2>
+      <div class="about">
+        <p class="lead">Étudiant en première année de cycle préparatoire, je me prépare à intégrer une école d'ingénieurs en génie civil.</p>
+        <div>
+          <p>Les mathématiques et la physique sont mes outils de base. Ce qui m'attire dans le génie civil, c'est de voir un calcul devenir un ouvrage réel.</p>
+          <p>Ce portfolio rassemble mon parcours, mes compétences et mes premiers projets. Il évoluera au fil de ma formation.</p>
+          <dl class="facts">
+            <div><dt>Formation</dt><dd>Cycle préparatoire</dd></div>
+            <div><dt>Domaine</dt><dd>Génie civil</dd></div>
+            <div><dt>Objectif</dt><dd>École d'ingénieurs</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARCOURS : vraie séquence chronologique -->
+    <section class="section alt" id="parcours">
+      <h2>Parcours</h2>
+      <ol class="timeline">
+        <li>
+          <span class="year">2025</span>
+          <h3>Baccalauréat</h3>
+          <p>Base scientifique en mathématiques et en physique. <em>(à adapter)</em></p>
+        </li>
+        <li class="current">
+          <span class="year">2025 – 2026</span>
+          <h3>Cycle préparatoire, 1re année</h3>
+          <p>Analyse, algèbre, mécanique, dessin technique et initiation à la programmation.</p>
+        </li>
+        <li>
+          <span class="year">Prochaine étape</span>
+          <h3>École d'ingénieurs en génie civil</h3>
+          <p>Structures, géotechnique, hydraulique et gestion de chantier.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="section" id="competences">
+      <h2>Compétences</h2>
+      <p class="section-note">Niveau actuel, en cours de progression.</p>
+      <ul class="skills">
+        <li data-level="80"><div class="skill-head"><span>Mathématiques</span><b>80 %</b></div><div class="bar"><i></i></div></li>
+        <li data-level="70"><div class="skill-head"><span>Physique et mécanique</span><b>70 %</b></div><div class="bar"><i></i></div></li>
+        <li data-level="55"><div class="skill-head"><span>Dessin technique (AutoCAD)</span><b>55 %</b></div><div class="bar"><i></i></div></li>
+        <li data-level="45"><div class="skill-head"><span>Résistance des matériaux</span><b>45 %</b></div><div class="bar"><i></i></div></li>
+        <li data-level="50"><div class="skill-head"><span>Python et HTML/CSS</span><b>50 %</b></div><div class="bar"><i></i></div></li>
+      </ul>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section alt" id="projets">
+      <h2>Projets</h2>
+      <div class="projects">
+        <article class="project">
+          <span class="chip">En cours</span>
+          <h3>Maquette de pont en spaghettis</h3>
+          <p>Conception d'un treillis, test de charge et comparaison avec le calcul théorique.</p>
+        </article>
+        <article class="project">
+          <span class="chip">À venir</span>
+          <h3>Plan d'une maison en AutoCAD</h3>
+          <p>Plan de masse, coupes et façades d'une maison individuelle.</p>
+        </article>
+        <article class="project">
+          <span class="chip">À venir</span>
+          <h3>Calcul de poutre avec Python</h3>
+          <p>Script qui trace l'effort tranchant et le moment fléchissant.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p class="lead">Un stage, un projet, une question ? Écrivez-moi.</p>
+          <a class="link-big" href="https://www.linkedin.com/in/mehdi-s-d-k-93711025b" target="_blank" rel="noopener">linkedin.com/in/mehdi-s-d-k</a>
+        </div>
+        <form id="form" novalidate>
+          <label>Nom<input type="text" name="nom" required autocomplete="name"></label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <p class="form-msg" id="formMsg" role="status"></p>
+          <button class="btn btn-primary" type="submit">Envoyer le message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Mehdi. Fait à la main avec HTML, CSS et JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
